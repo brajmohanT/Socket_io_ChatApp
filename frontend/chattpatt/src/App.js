@@ -7,6 +7,8 @@ import { nanoid } from "nanoid";
 // using all with npm in docs
 
 //no dotenv
+
+// d8: set the end point as heroku backend link
 const socket = io("https://chattpatt.herokuapp.com/");
 const userName = nanoid(4); // restrict nanoid size upto 4
 
