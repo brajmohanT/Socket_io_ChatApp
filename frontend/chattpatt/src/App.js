@@ -7,7 +7,7 @@ import { nanoid } from "nanoid";
 // using all with npm in docs
 
 //no dotenv
-const socket = io.connect("http://localhost:5000");
+const socket = io("https://chattpatt.herokuapp.com/");
 const userName = nanoid(4); // restrict nanoid size upto 4
 
 function App() {
