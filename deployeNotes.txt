@@ -1,0 +1,41 @@
+These are the deploye notes
+
+1. we are deploying front end on Netlify and backend on Heroku.
+
+Backend:
+
+d-1: npm add dotenv
+d2: import and config that in server.js
+d3: dont use manual port, create a port constant variable
+
+Note: all this was happening in server.js
+
+d4: Create Procfile(needed for Heroku)
+    write web: node server.js
+    which is the serving file. this tells heroku which 
+    command have to run afetr deployment.
+
+d5: in package.json inside scripts, add
+    start : node server.js
+
+now on heroku you can deploye branch 
+so we need to create the bakend_deploye branch having backend files only
+
+Note: in that branch package.json should be in the root
+
+so d7:
+    a. created a branch using checkout
+    b. remove all the files from tracking
+    c. add one by one from main branch.
+    d. now this branch only containg package-lock, package.json, Procfile, server.js
+    e. were ready to deploye it and deployed it. (getting some errors due to grammerly extension)
+       run in other browser.
+    f. get the link of this and set it as the end point for frontend.
+
+now backend has deployed and we have the heroku app link.
+
+d8: get the link of this and set it as the end point for frontend.
+d9: build the app "npm run build" inside the react app
+d10: drag and drop build folder into Netlify.
+
+link mil gyi maze kro.
